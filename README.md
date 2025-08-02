@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Assignment Submission Portal Readme
 
-## Getting Started
+![Demo App](/public/Assignment-Submission-Portal-Mockup.png)
 
-First, run the development server:
+## For Admin:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Overview:
+The Assignment Submission Portal provides functionalities for admins, trainers, and students to manage classes, assignments, and profiles.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Admin Features:
+1. ##### Trainer Management:
+   - Add, edit, and remove trainer details.
+   - View list of trainers.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. ##### Student Management:
+   - Add, edit, and remove student details.
+   - View enrolled classes and assigned trainers for each student.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. ##### Profile Management:
+   - Update admin profile details.
 
-## Learn More
+## For Trainer:
 
-To learn more about Next.js, take a look at the following resources:
+#### Overview:
+Trainers can manage classes, assignments, and student submissions within the portal.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Trainer Features:
+1. ##### Login:
+   - Access the portal using admin-provided email and password.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. ##### Class Management:
+   - Create multiple classes.
+   - View and manage classes, including adding and removing students.
 
-## Deploy on Vercel
+3. ##### Assignment Management:
+   - Create assignments with due dates and total marks.
+   - Edit or delete assignments as needed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. ##### Submission Management:
+   - View submissions for each assignment.
+   - Provide grades/marks to students.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. ##### Student Profile:
+   - View overall profiles of students.
+
+6. ##### Profile Management:
+   - Update trainer profile details.
+
+## For Student:
+
+#### Overview:
+Students can manage their assignments, classes, and profiles through the portal.
+
+#### Student Features:
+1. ##### Account Creation and Login:
+   - signup and login an account or login using admin-provided email and password.
+
+2. ##### Class Enrollment:
+   - Join classes using trainer-provided codes.
+   - Enroll in multiple classes.
+
+3. ##### Assignment Management:
+   - Submit assignments.
+   - View classmates within each class.
+
+4. ##### Report and Grades:
+   - View assignment reports, including submissions, pending assignments, and expired deadlines.
+   - View grades provided by trainers.
+
+5. ##### Profile Management:
+   - Update personal details in the profile section.
+
+#### Installation
+
+1. ##### Clone the Repository:
+   bash
+   git clone <repository_url>
+   cd assignment-submission-portal
+   
+
+2. ##### Install Dependencies:
+   bash
+   npm install
+   
+
+3. ##### Set up Environment Variables:
+   - Create a .env file based on .env.example and configure database connection details, JWT secret, etc.
+
+4. ##### Run the Application:
+   bash
+   npm start
+   
+
+5. ##### Access the Portal:
+   - Open your browser and go to http://localhost:5173.
+
+#### Technologies Used
+
+- ##### Frontend: HTML, CSS, JavaScript
+- ##### Backend: Node.js, Express.js
+- ##### Database: MongoDB, Google Storage
+- ##### Authentication: JWT (JSON Web Tokens) for secure authentication
