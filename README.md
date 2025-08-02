@@ -94,9 +94,3 @@ Students can manage their assignments, classes, and profiles through the portal.
 5. ##### Access the Portal:
    - Open your browser and go to http://localhost:5173.
 
-#### Technologies Used
-
-- ##### Frontend: HTML, CSS, JavaScript
-- ##### Backend: Node.js, Express.js
-- ##### Database: MongoDB, Google Storage
-- ##### Authentication: JWT (JSON Web Tokens) for secure authentication
